@@ -142,3 +142,46 @@ body {
   margin-bottom: 8px;
   font-size: 1rem;
 }
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.input-container:focus-within {
+  border-color: #495057;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #212529;
+  outline: none;
+  text-align: center;
+}
+
+.input-container input::placeholder {
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.unit {
+  padding: 16px 20px;
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.calculate-section {
+  margin-bottom: 2rem;
+}
