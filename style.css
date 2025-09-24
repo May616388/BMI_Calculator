@@ -160,7 +160,7 @@ body {
 
 .input-container input {
   flex: 1;
-  padding: 16px 20px;
+  padding: 16px 12px;
   border: none;
   background: transparent;
   font-size: 1.2rem;
@@ -184,4 +184,113 @@ body {
 
 .calculate-section {
   margin-bottom: 2rem;
+}
+
+.calculate-btn {
+  width: 100%;
+  background: #212529;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calculate-btn:hover {
+  background: #495057;
+}
+
+.calculate-btn:active {
+  transform: translateY(2px);
+}
+
+.result {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.result.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bmi-value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.bmi-category {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.category-underweight {
+  color: #0d6efd;
+}
+
+.category-normal {
+  color: #198754;
+}
+
+.category-overweight {
+  color: #fd7e14;
+}
+
+.category-obese {
+  color: #dc3545;
+}
+
+.bmi-description {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.learn-more {
+  color: #6c757d;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-bottom: 1px solid #dee2e6;
+  transition: color 0.2s ease;
+}
+
+.learn-more:hover {
+  color: #495057;
+}
+
+@media (max-width: 600px) {
+  .calculator-container {
+    padding: 1.5rem 20px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.75rem;
+  }
+
+  .bmi-value {
+    font-size: 3rem;
+  }
+
+  .gender-card {
+    padding: 20px 12px;
+  }
 }
